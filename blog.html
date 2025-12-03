@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/bolsa-trabajo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark">Volver</a>
+        </div>
+    </header>
+
+
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold text-center text-dui-dark mb-12" data-aos="fade-down">Nuestras Historias</h1>
+
+        <!-- Filtros Categorías -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+            <span class="px-4 py-2 bg-dui-gold text-white rounded-full cursor-pointer">Todos</span>
+            <span
+                class="px-4 py-2 bg-white text-dui-brown hover:bg-dui-yellow rounded-full cursor-pointer transition">Eventos</span>
+            <span
+                class="px-4 py-2 bg-white text-dui-brown hover:bg-dui-yellow rounded-full cursor-pointer transition">Testimonios</span>
+            <span
+                class="px-4 py-2 bg-white text-dui-brown hover:bg-dui-yellow rounded-full cursor-pointer transition">Transparencia</span>
+            <span
+                class="px-4 py-2 bg-white text-dui-brown hover:bg-dui-yellow rounded-full cursor-pointer transition">Educación</span>
+        </div>
+
+
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Post Evento -->
+            <article class="glass rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition"
+                data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&w=600" alt="imagen 1"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-dui-orange uppercase">Eventos</span>
+                    <h2 class="text-xl font-bold text-dui-brown mt-2">Gala Anual 2024</h2>
+                    <p class="text-sm text-gray-700 mt-2">Un resumen de nuestra noche mágica recaudando fondos para
+                        la
+                        nueva sede.</p>
+                    <a href="#" class="block mt-4 text-dui-teal font-bold hover:underline">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Post Testimonio -->
+            <article class="glass rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition"
+                data-aos="fade-up" data-aos-delay="100">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&w=600" alt="imagen 2"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-dui-orange uppercase">Testimonios</span>
+                    <h2 class="text-xl font-bold text-dui-brown mt-2">La historia de Mariana</h2>
+                    <p class="text-sm text-gray-700 mt-2">"Llegué sin nada, y me fui con una carrera universitaria y
+                        una
+                        familia".</p>
+                    <a href="#" class="block mt-4 text-dui-teal font-bold hover:underline">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Post Transparencia -->
+            <article class="glass rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition"
+                data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&w=600" alt="imagen 3"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-dui-orange uppercase">Transparencia</span>
+                    <h2 class="text-xl font-bold text-dui-brown mt-2">Reporte Q3: Metas Alcanzadas</h2>
+                    <p class="text-sm text-gray-700 mt-2">Análisis detallado de cómo invertimos el 100% de las
+                        donaciones de verano.</p>
+                    <a href="#" class="block mt-4 text-dui-teal font-bold hover:underline">Leer más</a>
+                </div>
+            </article>
+
+            <!-- Post Educación -->
+            <article class="glass rounded-xl overflow-hidden shadow-lg transform hover:-translate-y-2 transition"
+                data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&w=600" alt="imagen 4"
+                    class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-dui-orange uppercase">Educación</span>
+                    <h2 class="text-xl font-bold text-dui-brown mt-2">La importancia del arte</h2>
+                    <p class="text-sm text-gray-700 mt-2">Cómo la terapia artística ayuda a procesar el trauma
+                        infantil.
+                    </p>
+                    <a href="#" class="block mt-4 text-dui-teal font-bold hover:underline">Leer más</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div class="glass  p-6 rounded-xl border border-blue-100 lg:w-1/2 justify-center gap-8 mb-12 container mx-auto px-6 py-12"
+        data-aos="fade-up" data-aos-delay="300">
+        <h4 class="font-bold text-gray-800 mb-2 sans-serif text-center  mb-12">📩 Boletín Mensual</h4>
+        <p class="text-sm text-gray-600 mb-4 text-center">Recibe historias inspiradoras y reportes de progreso
+            directamente en tu
+            correo.</p>
+        <input type="email" placeholder="Tu correo electrónico"
+            class="w-full p-2 rounded border border-gray-300 mb-2 text-sm">
+        <button
+            class="w-full bg-dui-dark text-white font-bold py-2 rounded text-sm hover:bg-dui-gold transition sans-serif">Suscribirme</button>
+    </div>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

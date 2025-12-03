@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Casas - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <!-- Header (Consistente) -->
+    <header class="glass sticky top-0 z-50 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="text-dui-dark hover:text-dui-orange font-bold">Volver al Inicio</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro Mapas -->
+        <section class="parallax h-[400px] flex items-center justify-center relative"
+            style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');" loading="lazy">
+            <div class="absolute inset-0 bg-dui-teal opacity-60"></div>
+            <div class="relative z-10 text-center" data-aos="fade-up">
+                <h1 class="text-5xl font-bold text-white mb-2">Nuestra Huella</h1>
+                <p class="text-xl text-dui-yellow">Hogares seguros en México y el Mundo</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MÉXICO -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex items-center gap-4 mb-12">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="MX"
+                        class="w-12 h-8 shadow-sm">
+                    <h2 class="text-3xl font-bold text-dui-brown">Sedes en México</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Casa CDMX -->
+                    <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group"
+                        data-aos="fade-up">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="cdmx"
+                                class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dui-teal mb-2">Casa Central - CDMX</h3>
+                            <p class="text-dui-dark text-sm mb-4">Ubicada en el corazón de Coyoacán, esta sede alberga a
+                                40 jóvenes y coordina la logística nacional.</p>
+                            <p class="text-xs text-dui-sage font-mono">📍 Calle Higuera 45, Col. La Concepción</p>
+                        </div>
+                    </div>
+
+                    <!-- Casa Guadalajara -->
+                    <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group"
+                        data-aos="fade-up" data-aos-delay="100">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="gdl"
+                                class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dui-teal mb-2">Casa Occidente - Guadalajara</h3>
+                            <p class="text-dui-dark text-sm mb-4">Especializada en capacitación tecnológica y artes
+                                gráficas para adolescentes.</p>
+                            <p class="text-xs text-dui-sage font-mono">📍 Av. Vallarta 2440, Arcos Vallarta</p>
+                        </div>
+                    </div>
+
+                    <!-- Casa Monterrey -->
+                    <div class="glass rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 group"
+                        data-aos="fade-up" data-aos-delay="200">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="monterrey"
+                                class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dui-teal mb-2">Casa Norte - Monterrey</h3>
+                            <p class="text-dui-dark text-sm mb-4">Enfoque en vinculación industrial y becas
+                                universitarias con el TEC.</p>
+                            <p class="text-xs text-dui-sage font-mono">📍 Paseo de los Leones 120, Cumbres</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN INTERNACIONAL -->
+        <section class="py-16 bg-dui-dark relative">
+            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10">
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-3xl font-bold text-dui-yellow mb-12 text-center">Presencia Global</h2>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Colombia -->
+                    <div class="flex flex-col md:flex-row glass bg-dui-sand bg-opacity-20 rounded-xl overflow-hidden"
+                        data-aos="fade-right">
+                        <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="colombia"
+                            class="w-full md:w-1/3 object-cover">
+                        <div class="p-6 text-white">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-2xl">🇨🇴</span>
+                                <h3 class="text-xl font-bold">Bogotá, Colombia</h3>
+                            </div>
+                            <p class="text-sm opacity-90 mb-2">Programa piloto de reintegración rural.</p>
+                            <p class="text-xs font-mono text-dui-yellow">📍 Chapinero Alto, Cra 5</p>
+                        </div>
+                    </div>
+
+                    <!-- España -->
+                    <div class="flex flex-col md:flex-row glass bg-dui-sand bg-opacity-20 rounded-xl overflow-hidden"
+                        data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="españa"
+                            class="w-full md:w-1/3 object-cover">
+                        <div class="p-6 text-white">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-2xl">🇪🇸</span>
+                                <h3 class="text-xl font-bold">Madrid, España</h3>
+                            </div>
+                            <p class="text-sm opacity-90 mb-2">Oficina de enlace para fondos europeos.</p>
+                            <p class="text-xs font-mono text-dui-yellow">📍 Calle de Alcalá 45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-dui-pale">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-2xl font-bold text-dui-dark mb-8">¿Qué incluyen nuestras casas?</h2>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white px-6 py-3 rounded-lg shadow">📚 Biblioteca</span>
+                    <span class="bg-white px-6 py-3 rounded-lg shadow">💻 Sala de Cómputo</span>
+                    <span class="bg-white px-6 py-3 rounded-lg shadow">🌳 Jardín de Juegos</span>
+                    <span class="bg-white px-6 py-3 rounded-lg shadow">🏥 Consultorio Médico</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

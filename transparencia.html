@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/bolsa-trabajo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark">Volver</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro Parallax -->
+        <section class="parallax h-64 flex items-center justify-center"
+            style="background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&w=1600');">
+            <div class="bg-dui-dark bg-opacity-70 p-8 rounded-xl" data-aos="zoom-in">
+                <h1 class="text-4xl text-white font-bold">Transparencia Total</h1>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 py-12">
+
+            <div class="grid md:grid-cols-2 gap-12 mb-16">
+                <!-- Gráfica Visual CSS -->
+                <div class="glass p-8 rounded-2xl shadow-xl flex flex-col items-center justify-center"
+                    data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-dui-brown mb-6">Distribución de Fondos 2024</h3>
+                    <div class="w-48 h-48 rounded-full border-8 border-white shadow-inner relative flex items-center justify-center overflow-hidden"
+                        style="background: conic-gradient(#EBA93F 0% 70%, #3696A0 70% 85%, #85410D 85% 100%);">
+                        <div
+                            class="bg-white w-32 h-32 rounded-full absolute flex items-center justify-center font-bold text-dui-dark text-xl">
+                            100%</div>
+                    </div>
+                    <div class="mt-6 w-full space-y-2">
+                        <div class="flex items-center justify-between text-sm"><span class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-dui-orange rounded-full"></div> Programas Directos
+                            </span> <b>70%</b></div>
+                        <div class="flex items-center justify-between text-sm"><span class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-dui-teal rounded-full"></div> Reserva Operativa
+                            </span> <b>15%</b></div>
+                        <div class="flex items-center justify-between text-sm"><span class="flex items-center gap-2">
+                                <div class="w-3 h-3 bg-dui-brown rounded-full"></div> Administración
+                            </span> <b>15%</b></div>
+                    </div>
+                </div>
+
+                <!-- Lista de Donantes -->
+                <div class="glass p-8 rounded-2xl shadow-xl" data-aos="fade-left">
+                    <h3 class="text-xl font-bold text-dui-brown mb-6">Nuestros Grandes Aliados</h3>
+                    <ul class="space-y-4 text-dui-dark">
+                        <li class="p-3 bg-white bg-opacity-50 rounded flex justify-between items-center">
+                            <span>Fundación Telmex</span>
+                            <span class="text-dui-sage text-xs font-bold">PLATINO</span>
+                        </li>
+                        <li class="p-3 bg-white bg-opacity-50 rounded flex justify-between items-center">
+                            <span>Grupo Modelo</span>
+                            <span class="text-dui-sage text-xs font-bold">ORO</span>
+                        </li>
+                        <li class="p-3 bg-white bg-opacity-50 rounded flex justify-between items-center">
+                            <span>BBVA Bancomer</span>
+                            <span class="text-dui-sage text-xs font-bold">ORO</span>
+                        </li>
+                        <li class="p-3 bg-white bg-opacity-50 rounded flex justify-between items-center">
+                            <span>Cemex México</span>
+                            <span class="text-dui-sage text-xs font-bold">PLATA</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Descargas -->
+            <div class="grid md:grid-cols-3 gap-6" data-aos="fade-up">
+                <a href="#"
+                    class="bg-dui-teal hover:bg-dui-sage text-white p-6 rounded-xl shadow-lg transition text-center group">
+                    <span class="text-4xl block mb-2 group-hover:scale-110 transition">📄</span>
+                    <h4 class="font-bold">Informe Anual 2023</h4>
+                    <p class="text-xs opacity-80 mt-1">PDF (2.5 MB)</p>
+                </a>
+                <a href="#"
+                    class="bg-dui-gold hover:bg-dui-brown text-white p-6 rounded-xl shadow-lg transition text-center group">
+                    <span class="text-4xl block mb-2 group-hover:scale-110 transition">⚖️</span>
+                    <h4 class="font-bold">Dictamen Fiscal</h4>
+                    <p class="text-xs opacity-80 mt-1">PDF (1.2 MB)</p>
+                </a>
+                <a href="#"
+                    class="bg-dui-orange hover:bg-dui-brown text-white p-6 rounded-xl shadow-lg transition text-center group">
+                    <span class="text-4xl block mb-2 group-hover:scale-110 transition">📜</span>
+                    <h4 class="font-bold">Estatutos</h4>
+                    <p class="text-xs opacity-80 mt-1">PDF (0.8 MB)</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

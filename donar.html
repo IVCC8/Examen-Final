@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/donar.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-orange">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark hover:text-dui-teal">Volver</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="parallax py-16 text-center text-white relative"
+            style="background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="absolute inset-0 bg-dui-brown opacity-60"></div>
+            <div class="relative z-10 container mx-auto" data-aos="fade-down">
+                <h1 class="text-4xl font-bold mb-4">Invierte en Futuros</h1>
+                <p class="text-xl text-dui-yellow">Tu aporte es deducible de impuestos y cambia vidas reales.</p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 py-12 max-w-5xl -mt-10 relative z-20">
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <!-- Método 1: Transferencia -->
+                <div class="glass p-8 rounded-2xl shadow-xl space-y-6" data-aos="fade-right">
+                    <h3 class="text-xl font-bold text-dui-brown border-l-4 border-dui-gold pl-3">Transferencia Bancaria
+                    </h3>
+
+                    <!-- Tarjeta Estilizada -->
+                    <div
+                        class="bank-card p-6 rounded-2xl relative overflow-hidden transform hover:scale-105 transition duration-500">
+                        <div class="absolute top-0 right-0 p-4 opacity-20"><svg class="w-24 h-24" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4v10h16V8H4zm2 2h4v2H6v-2zm0 4h8v2H6v-2z" />
+                            </svg></div>
+                        <p class="text-sm opacity-80 uppercase tracking-widest mb-1">Banco Nacional</p>
+                        <p class="text-2xl font-mono font-bold tracking-wider mb-6">**** **** **** 8821</p>
+                        <div class="flex justify-between text-sm">
+                            <div>
+                                <p class="opacity-70 text-xs">TITULAR</p>
+                                <p class="font-bold">Vida con DUI A.C.</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="opacity-70 text-xs">CLABE</p>
+                                <p class="font-bold">012 345 67890123456 7</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-sm text-dui-dark bg-white bg-opacity-50 p-4 rounded-lg">
+                        <p><strong>Referencia:</strong> DONATIVO-[TU NOMBRE]</p>
+                        <p>Envía tu comprobante a <a href="mailto:finanzas@vidacondui.org"
+                                class="text-dui-teal font-bold underline">finanzas@vidacondui.org</a></p>
+                    </div>
+                </div>
+
+                <!-- Método 2: Online & Especie -->
+                <div class="space-y-6" data-aos="fade-left">
+                    <!-- Pago Online -->
+                    <div class="glass p-8 rounded-2xl shadow-xl text-center">
+                        <h3 class="text-xl font-bold text-dui-brown mb-6">Donación Rápida</h3>
+                        <div class="flex gap-2 justify-center mb-6">
+                            <button
+                                class="bg-white hover:bg-dui-pale text-dui-brown font-bold py-2 px-4 rounded transition border border-dui-pale">$100</button>
+                            <button
+                                class="bg-white hover:bg-dui-pale text-dui-brown font-bold py-2 px-4 rounded transition border border-dui-pale">$500</button>
+                            <button
+                                class="bg-white hover:bg-dui-pale text-dui-brown font-bold py-2 px-4 rounded transition border border-dui-pale">$1000</button>
+                        </div>
+                        <button
+                            class="w-full bg-dui-orange hover:bg-dui-gold text-white font-bold py-3 rounded-lg shadow-lg transition transform hover:scale-105 flex items-center justify-center gap-2">
+                            Tarjeta / PayPal
+                        </button>
+                    </div>
+
+                    <!-- Otras Formas -->
+                    <div class="glass p-6 rounded-2xl border-l-8 border-dui-sage">
+                        <h3 class="text-lg font-bold text-dui-dark mb-4">👐 Otras formas de ayudar</h3>
+                        <ul class="space-y-2 text-sm text-dui-dark">
+                            <li class="flex items-center gap-2"><span class="text-dui-orange">●</span> Donación en
+                                Especie (Ropa/Muebles)</li>
+                            <li class="flex items-center gap-2"><span class="text-dui-orange">●</span> Voluntariado
+                                Profesional</li>
+                            <li class="flex items-center gap-2"><span class="text-dui-orange">●</span> Apadrinamiento
+                                Corporativo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="py-16 bg-dui-teal">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-dui-dark mb-10">¿Qué logramos con tu ayuda?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-dui-pale/30 rounded-xl" data-aos="zoom-in">
+                        <div class="text-4xl mb-2">📚</div>
+                        <h3 class="font-bold text-xl text-dui-brown">$500 MXN</h3>
+                        <p>Útiles escolares para un niño por un mes.</p>
+                    </div>
+                    <div class="p-6 bg-dui-pale/30 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-4xl mb-2">🍲</div>
+                        <h3 class="font-bold text-xl text-dui-brown">$1,500 MXN</h3>
+                        <p>Alimentación balanceada para un adolescente.</p>
+                    </div>
+                    <div class="p-6 bg-dui-pale/30 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-4xl mb-2">🧱</div>
+                        <h3 class="font-bold text-xl text-dui-brown">$5,000 MXN</h3>
+                        <p>Mantenimiento mayor de una habitación.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto border-t-8 border-dui-gold">
+        <p>🔒 Sitio seguro. Fundación Vida con DUI</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

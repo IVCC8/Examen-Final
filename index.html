@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-theme-main flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <header class="fixed w-full top-0 z-50 glass transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-orange">Vida con DUI</span>
+            </a>
+
+            <!-- Menú Escritorio Extendido -->
+            <nav class="hidden xl:flex space-x-4 items-center text-sm font-bold text-white">
+                <a href="acerca.html" class="nav-link transition py-1 text-dui-orange">Nosotros</a>
+                <a href="nuestras-casas.html" class="nav-link transition py-1 text-dui-orange"> Nuestras Casas</a>
+                <a href="proyectos.html" class="nav-link transition py-1 text-dui-orange">Proyectos</a>
+                <a href="voluntariado.html" class="nav-link transition py-1 text-dui-orange">Voluntariado</a>
+                <a href="tienda.html" class="nav-link transition py-1 text-dui-orange">Tienda</a>
+                <a href="faq.html" class="nav-link transition py-1 text-dui-orange">FAQ</a>
+                <a href="bolsa-trabajo.html" class="nav-link transition py-1 text-dui-orange">Empleo</a>
+                <a href="blog.html" class="nav-link transition py-1 text-dui-orange">Blog</a>
+                <a href="transparencia.html" class="nav-link transition py-1 text-dui-orange">Transparencia</a>
+                <a href="contacto.html" class="nav-link transition py-1 text-dui-orange">Contacto</a>
+
+                <a href="donar.html"
+                    class="bg-dui-teal text-white px-4 py-2 rounded-full hover:bg-dui-sage shadow-lg transition transform hover:scale-105 ml-2">Donar</a>
+            </nav>
+
+            <!-- Botón Móvil -->
+            <button class="xl:hidden text-dui-orange text-2xl"
+                onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">&#9776;</button>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu"
+            class="hidden xl:hidden glass p-4 space-y-3 border-t border-dui-gold absolute w-full max-h-screen overflow-y-auto">
+            <a href="acerca.html" class="block text-dui-orange  font-semibold">Nosotros</a>
+            <a href="nuestras-casas.html" class="block text-dui-orange font-semibold">Nuestras Casas</a>
+            <a href="proyectos.html" class="block text-dui-orange  font-semibold">Proyectos</a>
+            <a href="voluntariado.html"
+                class="block ttext-dui-orange  font-bold bg-white bg-opacity-30 p-2 rounded">¡Ser
+                Voluntario! (Nuevo)</a>
+            <a href="tienda.html" class="block text-dui-orange  font-semibold">Tienda con Causa</a>
+            <a href="faq.html" class="block text-dui-orange  font-semibold">Preguntas Frecuentes</a>
+            <a href="bolsa-trabajo.html" class="block text-dui-orange  font-semibold">Bolsa de Trabajo</a>
+            <a href="blog.html" class="block text-dui-orange  font-semibold">Blog</a>
+            <a href="transparencia.html" class="block text-dui-orange  font-semibold">Transparencia</a>
+            <a href="contacto.html" class="nav-link transition py-1 text-dui-orange">Contacto</a>
+            <a href="donar.html" class="block text-center bg-dui-orange text-white py-2 rounded-lg font-bold">Donar
+                Ahora</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="parallax h-screen flex items-center justify-center text-center px-4 relative"
+            style="background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="absolute inset-0 bg-dui-dark opacity-40"></div>
+            <div class="relative z-10 max-w-4xl glass p-10 rounded-3xl" data-aos="zoom-in" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-dui-dark drop-shadow-md">Transformando Vidas</h1>
+                <p class="text-xl md:text-2xl mb-8 font-light text-dui-yellow">Un hogar seguro y un futuro brillante
+                    para
+                    cada niño.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="donar.html"
+                        class="bg-dui-orange hover:bg-dui-gold text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg transition">Hacer
+                        una Donación</a>
+                    <a href="nuestras-casas.html"
+                        class="bg-dui-teal hover:bg-dui-sage text-white px-8 py-3 rounded-full text-lg font-bold shadow-lg transition">Conoce
+                        nuestras sedes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISIÓN Y VISIÓN  -->
+        <section class="py-20 parallax relative"
+            style="background-image: url('https://images.unsplash.com/photo-1596908181055-e2e0413e6322?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');">
+            <div class="absolute inset-0 bg-dui-pale opacity-90"></div>
+            <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12">
+                <div class="glass p-8 rounded-2xl" data-aos="fade-right">
+                    <h2 class="text-3xl font-bold text-dui-brown mb-4 border-b-4 border-dui-gold inline-block">Nuestra
+                        Misión</h2>
+                    <p class="text-lg text-dui-dark leading-relaxed">
+                        Brindar apoyo integral a niños y jóvenes en situación de vulnerabilidad extrema, conectándolos
+                        con hogares seguros mediante convenios institucionales e inmobiliarios únicos. Acompañamos su
+                        transición a la vida adulta mediante capacitación técnica, desarrollo de habilidades blandas y
+                        monitoreo psicosocial continuo.
+                    </p>
+                </div>
+                <div class="glass p-8 rounded-2xl" data-aos="fade-left">
+                    <h2 class="text-3xl font-bold text-dui-teal mb-4 border-b-4 border-dui-sage inline-block">Nuestra
+                        Visión</h2>
+                    <p class="text-lg text-dui-dark leading-relaxed">
+                        Ser la organización referente en Latinoamérica en modelos de reintegración social juvenil,
+                        logrando que el 100% de nuestros beneficiarios alcancen la independencia económica y emocional
+                        al cumplir la mayoría de edad, rompiendo así los ciclos generacionales de pobreza y abandono.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUÉ APOYARNOS -->
+        <section class="py-20 bg-dui-yellow">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-dui-brown mb-12" data-aos="fade-up">¿Por qué apoyarnos?
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="glass p-6 rounded-xl text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-dui-orange"
+                        data-aos="flip-left">
+                        <div class="text-5xl mb-4">🏠</div>
+                        <h3 class="text-xl font-bold text-dui-dark mb-2">Impacto Tangible</h3>
+                        <p class="text-dui-sage">Tus donaciones se convierten directamente en ladrillos, libros y
+                            terapias. No intermediarios.</p>
+                    </div>
+                    <div class="glass p-6 rounded-xl text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-dui-teal"
+                        data-aos="flip-up" data-aos-delay="100">
+                        <div class="text-5xl mb-4">⚖️</div>
+                        <h3 class="text-xl font-bold text-dui-dark mb-2">Transparencia Total</h3>
+                        <p class="text-dui-sage">Auditorías trimestrales públicas. Sabrás exactamente a dónde va cada
+                            centavo.</p>
+                    </div>
+                    <div class="glass p-6 rounded-xl text-center transform hover:-translate-y-2 transition duration-300 border-t-4 border-dui-gold"
+                        data-aos="flip-right" data-aos-delay="200">
+                        <div class="text-5xl mb-4">❤️</div>
+                        <h3 class="text-xl font-bold text-dui-dark mb-2">Modelo Humano</h3>
+                        <p class="text-dui-sage">No somos un albergue temporal, creamos familias y vínculos de por vida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUESTRO IMPACTO  -->
+        <section class="py-20 bg-dui-dark text-white relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-64 h-64 bg-dui-teal opacity-20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-dui-orange opacity-20 rounded-full blur-3xl"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-4xl font-bold text-center text-dui-yellow mb-12" data-aos="fade-down">Nuestro Impacto
+                </h2>
+                <div class="grid md:grid-cols-4 gap-4 auto-rows-[200px]">
+                    <div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl"
+                        data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="imagen"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-bold text-xl">Construcción de Hogares</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl"
+                        data-aos="zoom-in" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="imagen"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-bold text-center px-2 ">Fomentar el aprendizaje desde una edad
+                                temprana</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 md:row-span-2 relative group overflow-hidden rounded-xl"
+                        data-aos="zoom-in" data-aos-delay="200">
+                        <img src="./img/Captura-de-pantalla-2025-12-02-184647.webp" alt="imagen"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-bold text-center px-2">Apoyar en el ámbito
+                                correspondiente</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1 md:row-span-1 relative group overflow-hidden rounded-xl"
+                        data-aos="zoom-in" data-aos-delay="300">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="imagen"
+                            class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <span class="text-white font-bold text-center px-2">Impulsar la educación y un entorno de
+                                sana convivencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICACIONES  -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-dui-brown mb-10" data-aos="fade-up">Avalado Por</h2>
+                <div class="flex flex-wrap justify-center items-center gap-12 opacity-80" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-24 h-24 rounded-full border-4 border-dui-pale flex items-center justify-center group-hover:border-dui-teal transition">
+                            <span class="text-2xl">📜</span>
+                        </div>
+                        <span class="mt-2 font-bold text-dui-dark">ISO 9001:2015</span>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-24 h-24 rounded-full border-4 border-dui-pale flex items-center justify-center group-hover:border-dui-teal transition">
+                            <span class="text-2xl">🏛️</span>
+                        </div>
+                        <span class="mt-2 font-bold text-dui-dark">Cemefi</span>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-24 h-24 rounded-full border-4 border-dui-pale flex items-center justify-center group-hover:border-dui-teal transition">
+                            <span class="text-2xl">⚖️</span>
+                        </div>
+                        <span class="mt-2 font-bold text-dui-dark">SAT Donataria</span>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-24 h-24 rounded-full border-4 border-dui-pale flex items-center justify-center group-hover:border-dui-teal transition">
+                            <span class="text-2xl">🤝</span>
+                        </div>
+                        <span class="mt-2 font-bold text-dui-dark">ONU Hábitat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="glass p-10 rounded-3xl bg-dui-sand/20 text-center max-w-3xl mx-auto" data-aos="flip-up">
+            <h3 class="text-2xl font-bold text-dui-dark mb-4">📬 Suscríbete a nuestro boletín</h3>
+            <p class="mb-6">Recibe noticias de nuestros logros y eventos.</p>
+            <form class="flex flex-col sm:flex-row gap-4">
+                <input type="email" placeholder="Tu correo electrónico" class="input-glass flex-grow">
+                <button type="button" onclick="alert('¡Gracias por suscribirte!')"
+                    class="btn-primary">Suscribirse</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dui-dark text-white pt-16 pb-8 border-t-8 border-dui-gold">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold text-dui-yellow mb-4">Vida con DUI</h3>
+                <p class="text-gray-400">Construyendo futuros desde los cimientos del amor y la seguridad.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-dui-pale mb-4">Contacto</h4>
+                <p>Av. Reforma 123, CDMX</p>
+                <p>contacto@vidacondui.org</p>
+                <p>+52 55 1234 5678</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-dui-pale mb-4">Síguenos</h4>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#" class="text-dui-orange hover:text-white transition">FB</a>
+                    <a href="#" class="text-dui-orange hover:text-white transition">IG</a>
+                    <a href="#" class="text-dui-orange hover:text-white transition">LN</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-10 text-gray-500 text-sm">
+            &copy; 2025 Fundación Vida con DUI. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

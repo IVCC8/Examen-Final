@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/faq.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark hover:text-dui-orange">Volver al Inicio</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero -->
+        <section class="bg-dui-dark text-white py-16 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-dui-gold opacity-10"
+                style="background-image: radial-gradient(circle, #ffffff 1px, transparent 1px); background-size: 20px 20px;">
+            </div>
+            <div class="relative z-10" data-aos="fade-down">
+                <h1 class="text-4xl font-bold mb-4">Preguntas Frecuentes</h1>
+                <p class="text-xl opacity-80">Respuestas rápidas para donantes, voluntarios y familias.</p>
+            </div>
+        </section>
+
+        <div class="container mx-auto px-6 py-12 max-w-4xl">
+
+            <!-- Sección Donaciones -->
+            <div class="mb-10" data-aos="fade-up">
+                <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2"><span
+                        class="bg-dui-orange rounded-full p-2 text-sm">💰</span> Donaciones y Finanzas</h2>
+                <div class="space-y-4">
+                    <details
+                        class="glass-panel p-4 cursor-pointer group shadow-md open:bg-white transition-all duration-300">
+                        <summary class="font-bold text-dui-brown flex justify-between items-center list-none">
+                            ¿Mis donaciones son deducibles de impuestos?
+                            <span class="text-xl group-open:rotate-180 transition-transform">⌄</span>
+                        </summary>
+                        <p class="text-dui-dark mt-3 text-sm leading-relaxed">
+                            Sí. Somos una donataria autorizada por el SAT. Al realizar tu donación, puedes solicitar tu
+                            recibo CFDI enviando tu comprobante y constancia fiscal a nuestro correo de finanzas.
+                        </p>
+                    </details>
+
+                    <details
+                        class="glass-panel p-4 cursor-pointer group shadow-md open:bg-white transition-all duration-300">
+                        <summary class="font-bold text-dui-brown flex justify-between items-center list-none">
+                            ¿Puedo donar desde el extranjero?
+                            <span class="text-xl group-open:rotate-180 transition-transform">⌄</span>
+                        </summary>
+                        <p class="text-dui-dark mt-3 text-sm leading-relaxed">
+                            Absolutamente. Aceptamos donaciones internacionales vía PayPal o transferencia SWIFT.
+                            Consulta la página de <a href="donar.html"
+                                class="text-dui-teal font-bold underline">Donar</a> para ver los códigos bancarios.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Sección Voluntariado -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2"><span
+                        class="bg-dui-sage rounded-full p-2 text-sm">🤝</span> Voluntariado</h2>
+                <div class="space-y-4">
+                    <details
+                        class="glass-panel p-4 cursor-pointer group shadow-md open:bg-white transition-all duration-300">
+                        <summary class="font-bold text-dui-brown flex justify-between items-center list-none">
+                            ¿Necesito experiencia previa para ser voluntario?
+                            <span class="text-xl group-open:rotate-180 transition-transform">⌄</span>
+                        </summary>
+                        <p class="text-dui-dark mt-3 text-sm leading-relaxed">
+                            Para la mayoría de los roles generales no se requiere experiencia, solo ganas de ayudar. Sin
+                            embargo, para roles especializados como psicología o asesoría legal, sí requerimos cédula
+                            profesional.
+                        </p>
+                    </details>
+
+                    <details
+                        class="glass-panel p-4 cursor-pointer group shadow-md open:bg-white transition-all duration-300">
+                        <summary class="font-bold text-dui-brown flex justify-between items-center list-none">
+                            ¿Cuál es la edad mínima para participar?
+                            <span class="text-xl group-open:rotate-180 transition-transform">⌄</span>
+                        </summary>
+                        <p class="text-dui-dark mt-3 text-sm leading-relaxed">
+                            Aceptamos voluntarios desde los 16 años (con permiso parental). Para el voluntariado
+                            corporativo no hay límite de edad.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Sección Sobre la Fundación -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2"><span
+                        class="bg-dui-gold rounded-full p-2 text-sm">🏛️</span> Institucional</h2>
+                <div class="space-y-4">
+                    <details
+                        class="glass-panel p-4 cursor-pointer group shadow-md open:bg-white transition-all duration-300">
+                        <summary class="font-bold text-dui-brown flex justify-between items-center list-none">
+                            ¿Cómo seleccionan a los beneficiarios?
+                            <span class="text-xl group-open:rotate-180 transition-transform">⌄</span>
+                        </summary>
+                        <p class="text-dui-dark mt-3 text-sm leading-relaxed">
+                            Trabajamos de la mano con el DIF y procuradurías locales. Nuestro comité de admisión evalúa
+                            cada caso basándose en la vulnerabilidad socioeconómica y la ausencia de redes de apoyo
+                            familiar.
+                        </p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- CTA Contacto -->
+            <div class="glass-panel p-8 text-center" data-aos="zoom-in">
+                <h3 class="text-xl font-bold text-dui-brown mb-2">¿No encontraste tu respuesta?</h3>
+                <p class="mb-6 text-sm">Nuestro equipo está listo para atenderte personalmente.</p>
+                <a href="contacto.html"
+                    class="bg-dui-brown text-white px-6 py-3 rounded-full font-bold hover:bg-dui-dark transition shadow-lg">Contáctanos</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

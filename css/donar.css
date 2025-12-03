@@ -1,0 +1,23 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #CFA65D;
+    overflow-x: hidden;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.bank-card {
+    background: linear-gradient(135deg, #3696A0, #332A14);
+    color: #F3E17E;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

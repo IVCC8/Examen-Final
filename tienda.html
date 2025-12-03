@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/bolsa-trabajo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI <span class="text-sm text-dui-sage">|
+                        Tienda</span></span>
+            </a>
+            <div class="flex gap-4">
+                <span class="cursor-pointer text-dui-dark hover:text-dui-orange">🛒 (0)</span>
+                <a href="index.html" class="font-bold text-dui-dark hover:text-dui-orange">Volver</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12" data-aos="fade-down">
+            <h1 class="text-4xl font-bold text-dui-brown mb-2">Regalos con Impacto</h1>
+            <p class="text-lg text-dui-dark opacity-80">El 100% de las ganancias se destina al programa de vivienda.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- Producto 1 -->
+            <div class="product-card shadow-lg group" data-aos="fade-up">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="playera"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute top-2 right-2 bg-dui-gold text-white text-xs font-bold px-2 py-1 rounded">Best
+                        Seller</div>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-dui-dark">Playera "Futuro"</h3>
+                    <p class="text-sm text-gray-600 mb-3">Algodón orgánico. Tallas S-XL.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-dui-brown">$250 MXN</span>
+                        <button
+                            class="bg-dui-teal hover:bg-dui-sage text-white px-3 py-1 rounded-full text-sm font-bold transition">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card shadow-lg group" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="taza"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-dui-dark">Taza Cerámica</h3>
+                    <p class="text-sm text-gray-600 mb-3">Diseño pintado a mano por los niños.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-dui-brown">$180 MXN</span>
+                        <button
+                            class="bg-dui-teal hover:bg-dui-sage text-white px-3 py-1 rounded-full text-sm font-bold transition">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="product-card shadow-lg group" data-aos="fade-up" data-aos-delay="200">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="oso"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-dui-dark">Oso de Peluche</h3>
+                    <p class="text-sm text-gray-600 mb-3">Mascota oficial "DUI".</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-dui-brown">$300 MXN</span>
+                        <button
+                            class="bg-dui-teal hover:bg-dui-sage text-white px-3 py-1 rounded-full text-sm font-bold transition">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="product-card shadow-lg group" data-aos="fade-up" data-aos-delay="300">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="kit"
+                        class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                </div>
+                <div class="p-4">
+                    <h3 class="text-lg font-bold text-dui-dark">Kit Escolar</h3>
+                    <p class="text-sm text-gray-600 mb-3">Compra uno, donamos otro.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xl font-bold text-dui-brown">$450 MXN</span>
+                        <button
+                            class="bg-dui-teal hover:bg-dui-sage text-white px-3 py-1 rounded-full text-sm font-bold transition">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 bg-dui-sand bg-opacity-30 rounded-2xl p-8 text-center" data-aos="zoom-in">
+            <h2 class="text-2xl font-bold text-dui-brown mb-4">¿Buscas regalos corporativos?</h2>
+            <p class="mb-6">Personalizamos productos para tu empresa. Apoya una buena causa con tu marca.</p>
+            <a href="contacto.html"
+                class="inline-block bg-dui-brown text-white px-6 py-3 rounded-lg font-bold hover:bg-dui-dark transition">Cotizar
+                Pedido</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

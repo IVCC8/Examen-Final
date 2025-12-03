@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Trabajo - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/bolsa-trabajo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8  rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark">Volver</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Intro -->
+        <section class="py-16 text-center text-white bg-dui-brown">
+            <h1 class="text-4xl font-bold mb-4" data-aos="fade-down">Únete a nuestra causa</h1>
+            <p class="text-xl opacity-90">Buscamos talento humano comprometido con el cambio social.</p>
+        </section>
+
+        <div class="container mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12">
+
+            <!-- LISTA DE VACANTES -->
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold text-dui-dark mb-6" data-aos="fade-right">Vacantes Disponibles</h2>
+
+                <!-- Puesto 1 -->
+                <div class="glass p-6 rounded-xl shadow-md border-l-8 border-dui-orange hover:bg-white transition"
+                    data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-dui-brown">Coordinador de Logística</h3>
+                    <p class="text-sm text-dui-sage mb-2">📍 CDMX • Tiempo Completo</p>
+                    <p class="text-gray-700 text-sm mb-4">Responsable de gestionar las rutas de donaciones y
+                        mantenimiento de las casas hogar.</p>
+                    <button class="text-dui-teal font-bold hover:underline">Ver detalles &rarr;</button>
+                </div>
+
+                <!-- Puesto 2 -->
+                <div class="glass p-6 rounded-xl shadow-md border-l-8 border-dui-teal hover:bg-white transition"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold text-dui-brown">Psicólogo Clínico Infantil</h3>
+                    <p class="text-sm text-dui-sage mb-2">📍 Guadalajara • Híbrido</p>
+                    <p class="text-gray-700 text-sm mb-4">Atención especializada en trauma y apego para niños de 5 a 12
+                        años.</p>
+                    <button class="text-dui-teal font-bold hover:underline">Ver detalles &rarr;</button>
+                </div>
+
+                <!-- Puesto 3 -->
+                <div class="glass p-6 rounded-xl shadow-md border-l-8 border-dui-gold hover:bg-white transition"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold text-dui-brown">Abogado Familiar</h3>
+                    <p class="text-sm text-dui-sage mb-2">📍 Monterrey • Por Proyecto</p>
+                    <p class="text-gray-700 text-sm mb-4">Gestión de trámites de custodia y regularización de documentos
+                        de identidad.</p>
+                    <button class="text-dui-teal font-bold hover:underline">Ver detalles &rarr;</button>
+                </div>
+            </div>
+
+            <!-- FORMULARIO DE APLICACIÓN -->
+            <div class="glass p-8 rounded-2xl shadow-xl h-fit sticky top-24" data-aos="zoom-in">
+                <h2 class="text-2xl font-bold text-dui-dark mb-6">Aplica Aquí</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-bold text-dui-brown mb-1">Nombre Completo</label>
+                        <input type="text"
+                            class="w-full p-3 rounded-lg border border-dui-pale focus:ring-2 focus:ring-dui-orange bg-white bg-opacity-80">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-dui-brown mb-1">Correo Electrónico</label>
+                        <input type="email"
+                            class="w-full p-3 rounded-lg border border-dui-pale focus:ring-2 focus:ring-dui-orange bg-white bg-opacity-80">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-dui-brown mb-1">Puesto de Interés</label>
+                        <select class="w-full p-3 rounded-lg border border-dui-pale bg-white bg-opacity-80">
+                            <option>Logística</option>
+                            <option>Psicología</option>
+                            <option>Legal</option>
+                            <option>Voluntariado General</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-dui-brown mb-1">Adjuntar CV (PDF)</label>
+                        <input type="file"
+                            class="w-full p-2 text-sm text-dui-sage file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-dui-teal file:text-white hover:file:bg-dui-sage">
+                    </div>
+                    <button type="button" onclick="alert('Solicitud enviada')"
+                        class="w-full bg-dui-gold hover:bg-dui-orange text-white font-bold py-3 rounded-lg transition shadow-lg">
+                        Enviar Solicitud
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

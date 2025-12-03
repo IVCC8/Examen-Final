@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/el dui.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fundación Vida con DUI</title>
+    <link rel="stylesheet" href="./css/bolsa-trabajo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <header class="glass sticky top-0 z-50 p-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl md:text-2xl font-bold text-dui-brown flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full flex items-center justify-center text-white">
+                    <img src="./img/duilogo.webp" alt="logo navbar">
+                </div>
+                <span class="hidden md:inline text-dui-brown">Vida con DUI</span>
+            </a>
+            <a href="index.html" class="font-bold text-dui-dark hover:text-dui-teal">Volver</a>
+        </div>
+    </header>
+
+    <main class="flex-grow relative">
+        <!-- Background Parallax -->
+        <div class="absolute inset-0 parallax z-0"
+            style="background-image: url('https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); filter: grayscale(20%);">
+        </div>
+        <div class="absolute inset-0 bg-dui-sand opacity-40 z-0"></div>
+
+        <div class="container mx-auto px-6 py-12 relative z-10 flex items-center justify-center min-h-screen">
+            <div class="glass w-full max-w-5xl rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row"
+                data-aos="zoom-in" data-aos-duration="800">
+
+                <!-- Info Lateral (Izquierda) -->
+                <div
+                    class="bg-dui-teal bg-opacity-90 text-white p-10 md:w-2/5 flex flex-col justify-between relative overflow-hidden">
+                    <div
+                        class="absolute top-[-50px] right-[-50px] w-32 h-32 bg-dui-yellow rounded-full opacity-20 blur-2xl">
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Hablemos</h2>
+                        <p class="mb-8 opacity-90 leading-relaxed">¿Quieres visitar una de nuestras casas o proponer una
+                            alianza? Estamos aquí para escucharte.</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <span class="text-2xl text-dui-yellow">📍</span>
+                                <div>
+                                    <p class="font-bold text-dui-yellow">Oficina Central</p>
+                                    <p class="text-sm">Av. Reforma 123, Piso 4<br>Col. Centro, CDMX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="text-2xl text-dui-yellow">📞</span>
+                                <div>
+                                    <p class="font-bold text-dui-yellow">Llámanos</p>
+                                    <p class="text-sm">+52 (55) 1234-5678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="text-2xl text-dui-yellow">✉️</span>
+                                <div>
+                                    <p class="font-bold text-dui-yellow">Escríbenos</p>
+                                    <p class="text-sm">contacto@vidacondui.org</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10">
+                        <p class="text-sm font-bold mb-3 text-dui-yellow">Redes Sociales</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-dui-orange transition">FB</a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-dui-orange transition">IG</a>
+                            <a href="#"
+                                class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-dui-orange transition">IN</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulario (Derecha) -->
+                <div class="p-10 md:w-3/5 bg-white bg-opacity-60 backdrop-blur-md">
+                    <form class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-bold text-dui-brown mb-1">Nombre</label>
+                                <input type="text"
+                                    class="w-full bg-white bg-opacity-80 border border-dui-pale rounded-lg p-3 focus:ring-2 focus:ring-dui-orange focus:border-transparent outline-none transition"
+                                    placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-dui-brown mb-1">Apellido</label>
+                                <input type="text"
+                                    class="w-full bg-white bg-opacity-80 border border-dui-pale rounded-lg p-3 focus:ring-2 focus:ring-dui-orange focus:border-transparent outline-none transition"
+                                    placeholder="Tu apellido">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-dui-brown mb-1">Correo Electrónico</label>
+                            <input type="email"
+                                class="w-full bg-white bg-opacity-80 border border-dui-pale rounded-lg p-3 focus:ring-2 focus:ring-dui-orange focus:border-transparent outline-none transition"
+                                placeholder="nombre@correo.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-dui-brown mb-1">Asunto</label>
+                            <select
+                                class="w-full bg-white bg-opacity-80 border border-dui-pale rounded-lg p-3 focus:ring-2 focus:ring-dui-orange outline-none">
+                                <option>Información General</option>
+                                <option>Voluntariado</option>
+                                <option>Alianzas / Empresas</option>
+                                <option>Solicitud de Apoyo</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-bold text-dui-brown mb-1">Mensaje</label>
+                            <textarea rows="4"
+                                class="w-full bg-white bg-opacity-80 border border-dui-pale rounded-lg p-3 focus:ring-2 focus:ring-dui-orange focus:border-transparent outline-none transition"
+                                placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="button" onclick="alert('Gracias por contactarnos. Te responderemos en breve.')"
+                            class="w-full bg-dui-brown hover:bg-dui-dark text-white font-bold py-3 rounded-lg transition transform active:scale-95 shadow-lg">Enviar
+                            Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dui-dark text-white py-6 text-center mt-auto">
+        <p>&copy; 2025 Fundación Vida con DUI</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
